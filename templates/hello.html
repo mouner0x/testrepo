@@ -2,67 +2,67 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Welcome Page</title>
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right, #2c3e50, #3498db);
-      color: white;
+      background: linear-gradient(to right, #667eea, #764ba2);
+      color: #fff;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
+      text-align: center;
     }
 
     .container {
-      text-align: center;
-      background-color: rgba(255, 255, 255, 0.05);
+      background-color: rgba(255, 255, 255, 0.1);
       padding: 40px;
-      border-radius: 16px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-      max-width: 600px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      max-width: 500px;
+      backdrop-filter: blur(10px);
     }
 
     h1 {
-      font-size: 2.5rem;
+      font-size: 3em;
       margin-bottom: 20px;
     }
 
     p {
-      font-size: 1.2rem;
+      font-size: 1.2em;
       margin-bottom: 30px;
-      line-height: 1.5;
     }
 
     .btn {
-      background-color: #e67e22;
+      padding: 12px 25px;
+      background-color: #ffffff;
+      color: #764ba2;
       border: none;
-      padding: 12px 24px;
-      font-size: 1rem;
       border-radius: 8px;
-      color: white;
+      font-size: 1em;
       cursor: pointer;
-      transition: background-color 0.3s ease;
-      text-decoration: none;
+      transition: all 0.3s ease;
     }
 
     .btn:hover {
-      background-color: #d35400;
+      background-color: #764ba2;
+      color: #fff;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Welcome to My Page</h1>
-    <p>This is a beautiful and modern web page built with HTML and CSS. You can use it as a starting point for your own site or project.</p>
-    <a href="#" class="btn">Get Started</a>
+    <h1>Welcome!</h1>
+    <p>We're glad you're here. Explore and enjoy the experience.</p>
+    <button class="btn" onclick="alert('Thanks for visiting!')">Get Started</button>
   </div>
 </body>
 </html>
